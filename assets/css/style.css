@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;    
 }
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box,
+.fizz,
+.buzz,
+.fizzbuzz{
+    width: calc(100% /12 *2);
+    height: 50px;
+}
