@@ -13,29 +13,26 @@
 //Scrivi un programma che stampi in console i numeri da 1 a 100
 const containerEl = document.querySelector(".container");
 for (let i=1; i<=100; i++){
+    const divEl = document.createElement("div");
     if (i%3 == 0 && i%5 == 0) {
         //Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”
         //console.log("FizzBuzz");
-        const divEl = document.createElement("div");
         divEl.append("FizzBuzz");
         divEl.classList.add("fizzbuzz");
         containerEl.append(divEl);
     } else if (i%5 == 0) {
         //per i multipli di 5 stampi “Buzz”.
         //console.log("Buzz"); 
-        const divEl = document.createElement("div");
         divEl.append("Buzz");
         divEl.classList.add("buzz");
         containerEl.append(divEl);
     } else if (i%3 == 0){
         //Sostituisco ai multipli di 3 "Fizz"
         //console.log("Fizz");
-        const divEl = document.createElement("div");
         divEl.append("Fizz");
         divEl.classList.add("fizz");
         containerEl.append(divEl);
     } else {
-        const divEl = document.createElement("div");
         //console.log(i);      
         divEl.append(`${i}`);
         divEl.classList.add("box");        
